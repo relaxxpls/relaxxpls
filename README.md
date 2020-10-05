@@ -1,9 +1,11 @@
 # Welcome to my GitHub page!
-### Some of my projects:   
+### Projects:   
+
 [![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=relaxxpls&repo=BruteScript&theme=cobalt)](https://github.com/relaxxpls/BruteScript)
 [![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=relaxxpls&repo=smarty&theme=cobalt)](https://github.com/relaxxpls/smarty)
 
-### Statistics:   
+### Stats:   
+
 ![Laxman's github stats](https://github-readme-stats.vercel.app/api?username=relaxxpls&show_icons=true&theme=tokyonight)
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=relaxxpls&layout=compact&theme=tokyonight)](https://github.com/relaxxpls/)
 
@@ -23,3 +25,4 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+ 
