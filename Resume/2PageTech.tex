@@ -162,7 +162,7 @@
   {Tech Leaders Summer Fellow}{(Jun. 2020 -- Aug. 2020)}
   {Camp K12}{Mumbai, India}
   \resumeItemListStart
-    \resumeItem{Taught coding in an intuitive manner to \textbf{100}\Plus students aged 14\hspace{2pt}-\hspace{1pt}18 years using \textbf{Python} and \textbf{JavaScript}}
+    \resumeItem{Taught coding in an intuitive manner to \textbf{100}\Plus\ students aged 14\hspace{2pt}-\hspace{1pt}18 years using \textbf{Python} and \textbf{JavaScript}}
     \resumeItem{Spearheaded the redesign \& diversification of the existing curriculum leading to \textbf{15\%} increase in revenue}
     \resumeItem{Covered curriculum spanning from basics such as Iterators to complex algorithms like Divide \& Conquer}
     \resumeItem{Utilized AI Playground, Repl.it, Hatch XR, and MIT App Inventor}
@@ -174,11 +174,12 @@
 \section{Projects}
 \resumeSubHeadingListStart
   \resumeProjectHeading
-  {\href{https://github.com/relaxxpls/ResoBin}{\textbf{ResoBin}} $|$ \emph{ReactJS, Redux, Python, Django, PostgreSQL}}{(Mar. 2021 - Present)}
+  {\href{https://github.com/relaxxpls/ResoBin}{\textbf{ResoBin}} $|$ \emph{ReactJS, Redux, Python, Django Rest Framework, PostgreSQL}}{(Mar. 2021 - Present)}
   {Summer of Code, IIT Bombay}{}
   \resumeItemListStart
     \resumeItem{Developed a web app MVP to be the one stop destination for sharing course notes and question papers}
     \resumeItem{Designed an intuitive and elegant frontend interface using \textbf{Figma} and built it using \textbf{React} and \textbf{Redux}}
+    \resumeItem{Built a \textbf{Django} backend server with a \textbf{PostgreSQL} database and utilised \textbf{JWT} for user authentication}
     \resumeItem{Tested the frontend functionality using the \textbf{Fetch} API and deployed it on \textbf{Netlify}}
   \resumeItemListEnd
 
@@ -186,8 +187,10 @@
   {\href{https://github.com/relaxxpls/StockPrediction}{\textbf{NIFTY 50 Prediction}} $|$ \emph{Python, TensorFlow, statsmodels, pandas, sklearn}}{(Feb. 2021 - Apr. 2021)}
   {Course: Machine Learning, IIT Bombay}{Prof. Biplab Banerjee, C-MInDS}
   \resumeItemListStart
-    \resumeItem{Studied and compared various recurrent neural network architectures for time series predictions} 
-    \resumeItem{Utilised LSTMs and CNNs in Tensorflow and ARIMA in statsmodels}
+    \resumeItem{Analysed multiple time series forecasting models on the NIFTY 50 dataset aquired from Yahoo Finance} 
+    \resumeItem{Predicted the outcome of the $15^{th}$ day by training the models on the previous 14 day sliding window}
+    \resumeItem{Utilised \textbf{statsmodels} for creating the \textbf{ARIMA} model which achieved the lowest testing mean sq. error}
+    \resumeItem{Compared various \textbf{RNNs} such as stacked and bidirectional \textbf{LSTMs} built using \textbf{TensorFlow} framework}
   \resumeItemListEnd
 
   \resumeProjectHeading
@@ -195,36 +198,35 @@
   {Course: Heat Transfer, IIT Bombay}{Prof. P. Sunthar, ChE}
   \resumeItemListStart
     \resumeItem{Studied \& analysed methods to lower energy consumption in large buildings situated in hot \& dry places}
-    \resumeItem{Facilitated evaporative cooling by utilising a thin layer of water which reduced the cooling load by 5\%}
+    \resumeItem{Facilitated evaporative cooling by utilising a thin layer of water which reduced the cooling load by \textbf{5\%}}
+    \resumeItem{Solved the PDEs in Python with \textbf{NumPy} \& \textbf{SymPy} and visualised the result data using Matplotlib}
+    \resumeItemListEnd
+
+  \resumeProjectHeadingAlt
+  {\href{https://github.com/relaxxpls/Optimize-Heating-Indoors}{\textbf{CPPMatrixLib}} $|$ \emph{C\Plus\Plus, CMake, GTest, TravisCI}}{(Jan. 2021 -- Mar. 2021)}
+  \resumeItemListStart
+    \resumeItem{Designed and implemented a lightweight, dependency-free, templated numerical analysis library for C\Plus\Plus}
+    \resumeItem{Implemented algorithms such as LU \& QR Decomposition, Prime Tests, ModInt, BigInt, FFT and NTT}
+    \resumeItem{Setup build and testing using CMake and GTest and CI/CD pipeline with Github Actions and TravisCI}
   \resumeItemListEnd
 
-\resumeProjectHeading
-{\textbf{CPPMatrixLib} $|$ \emph{C\Plus\Plus, CMake, GTest, TravisCI}}
-{(Jan. 2021 -- Mar. 2021)}
-{Summer of Code, IIT Bombay}
-{}
-\resumeItemListStart
-\resumeItem{Designed and implemented a lightweight, template matrix computations library for C\Plus\Plus}
-\resumeItem{Implemented algorithms include LU \& QR Decomposition, Fast Fourier Transform}
-\resumeItem{Setup build and testing using CMake and GTest and CI/CD with Github Actions and TravisCI}
-\resumeItemListEnd
+  \resumeProjectHeadingAlt
+  {\href{https://github.com/relaxxpls/TeXURL}{\textbf{TeXURL}} $|$ \emph{Python, Requests, \LaTeX, Regex}}{(Mar. 2021 - Ongoing)}
+  \resumeItemListStart
+    \resumeItem{Created a Python package to allow \LaTeX\ to render images from links similar to HTML or Markdown}
+    \resumeItem{Utilised \textbf{regex} to search \LaTeX\ code for valid URLs and \textbf{requests} to download \& link the local version}
+    \resumeItem{Optimized by identifying and avoiding duplicate downloads through file hashing with the \textbf{Adler-32} hash}
+  \resumeItemListEnd
 
-\resumeProjectHeadingAlt
-{\textbf{TeXURL} $|$ \emph{Python, Requests, \LaTeX, PyPI}}{(Mar. 2021 - Ongoing)}
-\resumeItemListStart
-\resumeItem{Built a Python package to assist \LaTeX compilers in processing links}
-\resumeItem{Built a Python package to assist \LaTeX compilers in processing links}
-\resumeItemListEnd
-
-\resumeProjectHeading
-{\textbf{Self  Suitcase} $|$ \emph{Python, OpenCV, ROS, Gazebo, RViz, RQT}}{(Mar. 2020 - Jul. 2020)}{Institute Technical Summer Project, IIT Bombay}{}
-\resumeItemListStart
-\resumeItem{Designed a suitcase that follows its owner, thus eliminating the trouble of carrying it around} 
-\resumeItem{Tested its functioning through virtual simulation by deploying it on a user controlled test target}
-\resumeItem{Implemented image processing through \textbf{Python} \& \textbf{OpenCV} to scan the surroundings and lock down on the target through the \textbf{HSV} color range and used centroid tracking for mimicking the targets motion}
-\resumeItem{Accurately \& efficiently simulated the bot and the control target using \textbf{Gazebo}, while using \textbf{ROS} to facilitate low-level device control and communication between various sub-processes}
-\resumeItemListEnd
-
+  \resumeProjectHeading
+  {\href{https://github.com/relaxxpls/smarty}{\textbf{Self Navigating Suitcase}} $|$ \emph{Python, OpenCV, ROS, Gazebo, RViz}}{(Mar. 2020 - Jul. 2020)}
+  {Institute Technical Summer Project, IIT Bombay}{}
+  \resumeItemListStart
+    \resumeItem{Designed a suitcase that follows its owner, thus eliminating the trouble of carrying it around} 
+    \resumeItem{Tested its functioning through virtual simulation by deploying it on a user controlled test target}
+    \resumeItem{Implemented image processing through \textbf{Python} \& \textbf{OpenCV} to scan the surroundings and lock down on the target through the HSV color range and used centroid tracking for mimicking the targets motion}
+    \resumeItem{Accurately \& efficiently simulated the bot and the control target using \textbf{Gazebo}, while using \textbf{ROS} to facilitate low-level device control and communication between various sub-processes}
+  \resumeItemListEnd
 \resumeSubHeadingListEnd
 
 
@@ -232,7 +234,7 @@
 \section{Achievements}
 \resumeItemAltListStart
 	\resumeItemAlt
-    {\textbf{4\hspace{1pt}$\star$} at CodeChef (relaxxpls) and \textbf{1048\textsuperscript{th}} amongst \textbf{9000\Plus} participants in Googe Kickstart Sept. `20}
+    {\textbf{4\hspace{1pt}$\star$} at CodeChef \href{https://www.codechef.com/users/relaxxpls}{(relaxxpls)} and \textbf{1048\textsuperscript{th}} amongst \textbf{9000\Plus} participants in Googe Kickstart Sept. `20}
     {(2020)}
 	\resumeItemAlt
     {Secured \textbf{AIR 1448} amongst \textbf{15lakh} other candidates in JEE Advanced}
@@ -299,22 +301,6 @@
   \techSkill{MOOCs}{DSA Specialization (UCSD), Machine Learning (CS50 Harvard), Deep Learning Specialization}
 \techSkillListEnd
 
-% \resumeItemAltListStart
-% \resumeSubHeadingListStart
-%   \resumeSubSubheading
-%     {\textbf{\textsc{Computer Sci. : }} Machine Learning, Data Analysis, Numerical Analysis, Data Structures \& Algorithms}{} \vspace{-0.35cm}
-%   \resumeSubSubheading
-%     {\hspace{3.05cm}DSA Specialization (UC San Diego, Coursera), Machine Learning\textsuperscript{\textdagger} (CS50 Harvard, edX)}{}\vspace{-0.35cm}
-%   \resumeSubSubheading
-%     {\hspace{3.05cm}Data Structures \& Algoritms (Summer Of Science '20)}{[\ \textdagger\ : To be completed by Apr '21]}\vspace{-0.35cm}
-
-%   \resumeSubSubheading
-%     {\textbf{\textsc{Mathematics \hspace{3.5mm}: }}Numerical Analysis, Linear Algebra, Differential Equations, Discrete Structures\textsuperscript{\textdagger}}{}\vspace{-0.35cm}
-
-%   \resumeSubSubheading
-%     {\textbf{\textsc{Chemical Eng. : }}Process Fluid Mechanics\textsuperscript{\textdagger}, Heat Transfer\textsuperscript{\textdagger}, Thermodynamics, Computational Methods}{}\vspace{-0.3cm}
-% \resumeSubHeadingListEnd
-% \resumeItemAltListEnd
 
 %-----------EXTRACURRICULAR-----------
 \section{Extracurricular}
@@ -343,4 +329,5 @@
     {Played football (midfielder) for Sharada Mandir School team at state level}
     {(2015 - 2016)}
 \resumeItemAltListEnd
+
 \end{document}
