@@ -103,12 +103,14 @@
         \tiny{$\bullet$}\hspace{7pt}\small{#1} & \textit{\small{#2}} \\
     \end{tabular*}\vspace{-11pt}
 }
+
 \newcommand{\resumeItemAlt}[2]{
     \begin{tabular*}{0.977\textwidth}{l@{\extracolsep{\fill}}r}
         \tiny{$\bullet$}\hspace{7pt}\small{#1} & \textit{\footnotesize #2} \\
     \end{tabular*}
 }
-
+\newcommand{\resumeItemAltListStart}{\begin{adjustwidth}{10.8pt}{}}
+\newcommand{\resumeItemAltListEnd}{\end{adjustwidth}}
 
 %%%%%%%%%%%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
@@ -117,7 +119,7 @@
 %-----------Profile-----------
 \newcommand{\name}{Laxman Desai}
 \newcommand{\email}{desai.laxman2001@gmail.com}
-\newcommand{\contact}{(+91) 820-807-8914}
+\newcommand{\contact}{(\Plus 91) 820-807-8914}
 \newcommand{\GithubUsername}{relaxxpls}
 \newcommand{\LinkedinUsername}{LaxmanDesai}
 
@@ -136,11 +138,12 @@
   \resumeSubheading
   {Indian Institute of Technology, Bombay}{Mumbai, India}
   {Bachelor of Technology}{2019 -- Present}
-  \begin{adjustwidth}{10.8pt}{}
+  \resumeItemAltListStart
     \resumeItemAlt{Majoring in Chemical Engineering}{(CGPA 8.19/10)}
     \resumeItemAlt{Minoring in Machine Learning \& Data Science}{(CGPA 10.0/10)}
-  \end{adjustwidth}
+  \resumeItemAltListEnd
 \resumeSubHeadingListEnd
+
 
 %-----------Experience-----------
 \section{Experience}
@@ -159,7 +162,7 @@
   {Tech Leaders Summer Fellow}{(Jun. 2020 -- Aug. 2020)}
   {Camp K12}{Mumbai, India}
   \resumeItemListStart
-    \resumeItem{Taught coding in an intuitive manner to \textbf{100}\footnotesize{+} \small students aged 14\hspace{2pt}-\hspace{1pt}18 years using \textbf{Python} and \textbf{JavaScript}}
+    \resumeItem{Taught coding in an intuitive manner to \textbf{100}\Plus students aged 14\hspace{2pt}-\hspace{1pt}18 years using \textbf{Python} and \textbf{JavaScript}}
     \resumeItem{Spearheaded the redesign \& diversification of the existing curriculum leading to \textbf{15\%} increase in revenue}
     \resumeItem{Covered curriculum spanning from basics such as Iterators to complex algorithms like Divide \& Conquer}
     \resumeItem{Utilized AI Playground, Repl.it, Hatch XR, and MIT App Inventor}
@@ -170,38 +173,38 @@
 %-----------PROJECTS-----------
 \section{Projects}
 \resumeSubHeadingListStart
-\resumeProjectHeading
-{\href{https://github.com/relaxxpls/ResoBin}{\textbf{ResoBin}} $|$ \emph{ReactJS, Redux, Python, Django, PostgreSQL}}
-{(Mar. 2021 - Ongoing)}
-{Summer of Code, IIT Bombay}
-{}
-\resumeItemListStart
-\resumeItem{Ideated, designed and built a course material sharing website with the React-Redux framework} 
-\resumeItemListEnd
-  
-\resumeProjectHeading
-{\textbf{ResoBin} $|$ \emph{ReactJS, Redux, Python, Django, PostgreSQL}}
-{(Mar. 2021 - Ongoing)}
-{Summer of Code, IIT Bombay}
-{}
-\resumeItemListStart
-\resumeItem{Designed a suitcase that follows its owner there by eliminating the trouble of carrying it around} 
-\resumeItem{Tested its functioning through virtual simulation by deploying it on a user controlled test target}
-\resumeItemListEnd
+  \resumeProjectHeading
+  {\href{https://github.com/relaxxpls/ResoBin}{\textbf{ResoBin}} $|$ \emph{ReactJS, Redux, Python, Django, PostgreSQL}}{(Mar. 2021 - Present)}
+  {Summer of Code, IIT Bombay}{}
+  \resumeItemListStart
+    \resumeItem{Developed a web app MVP to be the one stop destination for sharing course notes and question papers}
+    \resumeItem{Designed an intuitive and elegant frontend interface using \textbf{Figma} and built it using \textbf{React} and \textbf{Redux}}
+    \resumeItem{Tested the frontend functionality using the \textbf{Fetch} API and deployed it on \textbf{Netlify}}
+  \resumeItemListEnd
+
+  \resumeProjectHeading
+  {\href{https://github.com/relaxxpls/StockPrediction}{\textbf{NIFTY 50 Prediction}} $|$ \emph{Python, TensorFlow, statsmodels, pandas, sklearn}}{(Feb. 2021 - Apr. 2021)}
+  {Course: Machine Learning, IIT Bombay}{Prof. Biplab Banerjee, C-MInDS}
+  \resumeItemListStart
+    \resumeItem{Studied and compared various recurrent neural network architectures for time series predictions} 
+    \resumeItem{Utilised LSTMs and CNNs in Tensorflow and ARIMA in statsmodels}
+  \resumeItemListEnd
+
+  \resumeProjectHeading
+  {\href{https://github.com/relaxxpls/Optimize-Heating-Indoors}{\textbf{Optimize Heating Indoors}} $|$ \emph{Python, SymPy, NumPy, Matplotlib}}{(Feb. 2021 -- Apr. 2021)}
+  {Course: Heat Transfer, IIT Bombay}{Prof. P. Sunthar, ChE}
+  \resumeItemListStart
+    \resumeItem{Studied \& analysed methods to lower energy consumption in large buildings situated in hot \& dry places}
+    \resumeItem{Facilitated evaporative cooling by utilising a thin layer of water which reduced the cooling load by 5\%}
+  \resumeItemListEnd
 
 \resumeProjectHeading
-{\textbf{Optimize Heating Indoors} $|$ \emph{Python, SymPy, Pandas}}{(Feb. 2021 -- Apr. 2021)}{Heat Transfer Course Project, IIT Bombay}{}
-\resumeItemListStart
-\resumeItem{Analysed various heat sources} 
-\resumeItemListEnd
-
-\resumeProjectHeading
-{\textbf{CPPMatrixLib} $|$ \emph{C++, CMake, GTest, TravisCI}}
+{\textbf{CPPMatrixLib} $|$ \emph{C\Plus\Plus, CMake, GTest, TravisCI}}
 {(Jan. 2021 -- Mar. 2021)}
 {Summer of Code, IIT Bombay}
 {}
 \resumeItemListStart
-\resumeItem{Designed and implemented a lightweight, template matrix computations library for C++}
+\resumeItem{Designed and implemented a lightweight, template matrix computations library for C\Plus\Plus}
 \resumeItem{Implemented algorithms include LU \& QR Decomposition, Fast Fourier Transform}
 \resumeItem{Setup build and testing using CMake and GTest and CI/CD with Github Actions and TravisCI}
 \resumeItemListEnd
@@ -221,29 +224,15 @@
 \resumeItem{Implemented image processing through \textbf{Python} \& \textbf{OpenCV} to scan the surroundings and lock down on the target through the \textbf{HSV} color range and used centroid tracking for mimicking the targets motion}
 \resumeItem{Accurately \& efficiently simulated the bot and the control target using \textbf{Gazebo}, while using \textbf{ROS} to facilitate low-level device control and communication between various sub-processes}
 \resumeItemListEnd
-%---------
-\resumeProjectHeading
-{\textbf{Remote Controlled Airplane} $|$ \emph{IoT}}{(Sep. 2019 - Oct. 2019)} {Aeromodelling Club, IIT Bombay}{}
-\resumeItemListStart
-\resumeItem{Designed fuselage, stabilizers and wings to reduce drag and enhance the performance} 
-\resumeItem{Investigated design parameters for optimum performance and stability during flight}
-\resumeItemListEnd
-%---------    
-\resumeProjectHeading
-{\textbf{Wireless Remote Controlled Car} $|$ \emph{IoT}}{(Aug. 2019 - Sep. 2019)} {Electronics \& Robotics Club, IIT Bombay}{}
-\resumeItemListStart
-\resumeItem{Built a bot which decodes Bluetooth signals using an \textbf{ATtiny} IC to overcome an obstacle-filled course} 
-\resumeItem{Installed \textbf{HC05} Bluetooth module to operate the bot remotely using an Android app}
-\resumeItem{Implemented differential steering mechanism via \textbf{L293D} motor driver for reducing the turning radius}
-\resumeItemListEnd
+
 \resumeSubHeadingListEnd
 
 
 %-----------PROGRAMMING SKILLS-----------
 \section{Achievements}
-\begin{adjustwidth}{10.8pt}{}
+\resumeItemAltListStart
 	\resumeItemAlt
-    {\textbf{4\hspace{1pt}$\star$} at CodeChef (relaxxpls) and \textbf{1048\textsuperscript{th}} amongst \textbf{9000+} participants in Googe Kickstart Sept. `20}
+    {\textbf{4\hspace{1pt}$\star$} at CodeChef (relaxxpls) and \textbf{1048\textsuperscript{th}} amongst \textbf{9000\Plus} participants in Googe Kickstart Sept. `20}
     {(2020)}
 	\resumeItemAlt
     {Secured \textbf{AIR 1448} amongst \textbf{15lakh} other candidates in JEE Advanced}
@@ -263,7 +252,7 @@
 	\resumeItemAlt
     {Goa State Talent Search Examination scholar for \textbf{2} consecutive years}
     {(2018 -- 2019)}
-\end{adjustwidth}
+\resumeItemAltListEnd
 
 
 %-----------PROGRAMMING SKILLS-----------
@@ -271,7 +260,7 @@
 \techSkillListStart
   \techSkill{Languages}{C\Plus\Plus 17, Python, JavaScript/TypeScript, HTML, SASS, Perl, \TeX, BASH, Java, Matlab, R}
   \techSkill{Development}{ReactJS, Redux, Django Rest Framework, Flask, Selenium, Requests, Redis, PostgreSQL}
-  \techSkill{Libraries}{TensorFlow, Keras, Torch, Pandas, OpenCV, Pillow, NumPy, SKLearn, SymPy, SciPy, Tesseract}
+  \techSkill{Libraries}{TensorFlow, Keras, Torch, Pandas, OpenCV, Pillow, NumPy, SKLearn, SymPy, SciPy, seaborn}
   \techSkill{Tools}{Git, Postman, PowerShell, Jupyter, VSCode, CMake, SolidWorks, Ansys, Google Test, Adobe CC}
 \techSkillListEnd
 
@@ -283,8 +272,8 @@
   {Design Secretary}{(Apr. 2020 -- Apr. 2021)}
   {Chemical Engineering Association, IIT Bombay}{Mumbai, India}
   \resumeItemListStart
-    \resumeItem{Part of a \textbf{9} member team, selected out of \textbf{50+} students on the basis of manifesto, assignment \& interview}
-    \resumeItem{Co-organised and coordinated \textbf{10+} departmental events, managing \textbf{1000+} unique students in total}
+    \resumeItem{Part of a \textbf{9} member team, selected out of \textbf{50\Plus} students on the basis of manifesto, assignment \& interview}
+    \resumeItem{Co-organised and coordinated \textbf{10\Plus} departmental events, managing \textbf{1000\Plus} unique students in total}
     \resumeItem{Crafted posters, curated content, designed innovative department magazines, tshirts and hoodies}
     \resumeItem{Utilized \textbf{Adobe Creative Cloud} (Illustrator, InDesign, Photoshop, Premiere Pro and After Effects)}
   \resumeItemListEnd
@@ -293,8 +282,8 @@
   {Institute Cultural Mentor}{(Jun. 2020 -- May. 2021)}
   {Culturals, IIT Bombay}{Mumbai, India}
   \resumeItemListStart
-    \resumeItem{Nominated (\textbf{4} out of \textbf{100}+) by Institute Fashion Nominee to promote fashion \& other cultural activities}
-    \resumeItem{Spearheaded a team of \textbf{20+} freshmen to manage the media and publicity for ShowStopper '21 -- the institute's largest fashion show attaining a staggering attendance of \textbf{300+} even during an online semester}
+    \resumeItem{Nominated (\textbf{4} out of \textbf{100}\Plus) by Institute Fashion Nominee to promote fashion \& other cultural activities}
+    \resumeItem{Spearheaded a team of \textbf{20\Plus} freshmen to manage the media and publicity for ShowStopper `21 -- the institute's largest fashion show attaining a staggering attendance of \textbf{300\Plus} even during an online semester}
     \resumeItem{Conceptualized and spearheaded Style Saturday, a monthly blog aimed at promoting style, grooming and personal well being amidst the COVID lock down resulting in \textbf{2$\times$} monthly engagement}
     \resumeItem{Led the ideation \& execution of various genre related events, targeting \textbf{300\%} \textbf{increase} in participation by introducing mixed themes, using innovative publicity, and introducing large scale never before seen online events such as Glamour Grande, an online fashion show}
   \resumeItemListEnd
@@ -303,44 +292,55 @@
 
 %-----------Courses-----------
 \section{Key Courses}
-\begin{adjustwidth}{10.8pt}{}
-\resumeSubHeadingListStart
-  \resumeSubSubheading
-    {\textbf{\textsc{Computer Sci. : }} Machine Learning, Data Analysis}{} \vspace{-0.35cm}
-  \resumeSubSubheading
-    {\hspace{3.05cm}DSA Specialization (UC San Diego, Coursera), Machine Learning\textsuperscript{\textdagger} (CS50 Harvard, edX)}{}\vspace{-0.35cm}
-  \resumeSubSubheading
-    {\hspace{3.05cm}Data Structures \& Algoritms (Summer Of Science '20)}{[\ \textdagger\ : To be completed by Apr '21]}\vspace{-0.35cm}
+\techSkillListStart
+  \techSkill{Computer Science}{Machine Learning, Data Analysis, Computer Vision (Summer of Science `21)}
+  \techSkill{Chemical Engg.}{Process Fluid Mechanics, Heat Transfer, Thermodynamics, Computational Methods Lab}
+  \techSkill{Mathematics\ }{Numerical Analysis, Calculus, Linear Algebra, Differential Equations, Discrete Structures}
+  \techSkill{MOOCs}{DSA Specialization (UCSD), Machine Learning (CS50 Harvard), Deep Learning Specialization}
+\techSkillListEnd
 
-  \resumeSubSubheading
-    {\textbf{\textsc{Mathematics \hspace{3.5mm}: }}Numerical Analysis, Linear Algebra, Differential Equations, Discrete Structures\textsuperscript{\textdagger}}{}\vspace{-0.35cm}
+% \resumeItemAltListStart
+% \resumeSubHeadingListStart
+%   \resumeSubSubheading
+%     {\textbf{\textsc{Computer Sci. : }} Machine Learning, Data Analysis, Numerical Analysis, Data Structures \& Algorithms}{} \vspace{-0.35cm}
+%   \resumeSubSubheading
+%     {\hspace{3.05cm}DSA Specialization (UC San Diego, Coursera), Machine Learning\textsuperscript{\textdagger} (CS50 Harvard, edX)}{}\vspace{-0.35cm}
+%   \resumeSubSubheading
+%     {\hspace{3.05cm}Data Structures \& Algoritms (Summer Of Science '20)}{[\ \textdagger\ : To be completed by Apr '21]}\vspace{-0.35cm}
 
-  \resumeSubSubheading
-    {\textbf{\textsc{Chemical Eng. : }}Process Fluid Mechanics\textsuperscript{\textdagger}, Heat Transfer\textsuperscript{\textdagger}, Thermodynamics, Computational Methods}{}\vspace{-0.3cm}
-\resumeSubHeadingListEnd
-\end{adjustwidth}
+%   \resumeSubSubheading
+%     {\textbf{\textsc{Mathematics \hspace{3.5mm}: }}Numerical Analysis, Linear Algebra, Differential Equations, Discrete Structures\textsuperscript{\textdagger}}{}\vspace{-0.35cm}
+
+%   \resumeSubSubheading
+%     {\textbf{\textsc{Chemical Eng. : }}Process Fluid Mechanics\textsuperscript{\textdagger}, Heat Transfer\textsuperscript{\textdagger}, Thermodynamics, Computational Methods}{}\vspace{-0.3cm}
+% \resumeSubHeadingListEnd
+% \resumeItemAltListEnd
 
 %-----------EXTRACURRICULAR-----------
 \section{Extracurricular}
-\begin{adjustwidth}{10.8pt}{}
-	\extracurr{Mentored \textbf{200+} UG \& PG freshers and introduced them to various cultural activities}{(Sept. 2020)}
-	  
-	\extracurr{Successfully completed a Finance Bootcamp organised by Finance Club, IIT Bombay which}{(Apr. 2020)}
-	\vspace{-2pt} \hspace{3.75mm}{\small taught and tested the knowledge of Financial Statements, Capital Markets \& Ratio Analysis}
-	\vspace{2pt}
-	  
-	\extracurr{Produced a song and released it on Spotify as a part of Institute Cultural Summer Project}{(Aug. 2020)}
-	  
-	\extracurr{Participated in StyleUp's Showstopper 2020 and performed to an audience of \textbf{1000+}}{(Jan. 2020)}
-	  
-	\extracurr{Professionally trained in table tennis through the National Sports Organization (NSO)} {(2019 - 2020)}
-	  
-	\extracurr{Directed, Edited and Starred in a \textbf{3\textsuperscript{rd}} Prize winning comedy video "Area 51 Leaks",}{(Sep. 2019)}
-	  
-	\vspace{-2pt} \hspace{3.75mm}{made as an entry for the freshmen festival (Freshiezza)}
-	  
-	\vspace{2pt}
-	\extracurr{Played football (midfielder) for Sharada Mandir School team at state level}{(2015 - 2016)}
-	
-\end{adjustwidth}
+\resumeItemAltListStart
+	\resumeItemAlt
+    {Mentored \textbf{200\Plus} UG \& PG freshers and introduced them to various cultural activities}
+    {(Sept. 2020)}  
+	\resumeItemAlt
+    {Successfully completed a Finance Bootcamp organised by Finance Club, IIT Bombay which}
+    {(Apr. 2020)}
+	\vspace{-2pt} \hspace{3.75mm}{\small taught and tested the knowledge of Financial Statements, Capital Markets \& Ratio Analysis}\vspace{2pt}
+	\resumeItemAlt
+    {Produced a song and released it on Spotify as a part of Institute Cultural Summer Project}
+    {(Aug. 2020)}
+	\resumeItemAlt
+    {Participated in StyleUp's Showstopper 2020 and performed to an audience of \textbf{1000\Plus}}
+    {(Jan. 2020)}
+	\resumeItemAlt
+    {Professionally trained in table tennis through the National Sports Organization (NSO)}
+    {(2019 - 2020)}
+	\resumeItemAlt
+    {Directed, Edited and Starred in a \textbf{3\textsuperscript{rd}} Prize winning comedy video \textit{Area 51 Leaks}, made as}
+    {(Sep. 2019)}
+	  \vspace{-2pt} \hspace{3.75mm}{an entry for the freshmen festival (Freshiezza)}\vspace{2pt}
+	\resumeItemAlt
+    {Played football (midfielder) for Sharada Mandir School team at state level}
+    {(2015 - 2016)}
+\resumeItemAltListEnd
 \end{document}
