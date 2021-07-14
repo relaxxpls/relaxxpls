@@ -27,7 +27,7 @@ I'm a Junior Undergraduate at IIT Bombay. I love to explore different domains of
 ## Stats
 
 [![Laxman's GitHub stats](https://github-readme-stats.vercel.app/api?username=relaxxpls&show_icons=true&count_private=true&theme=tokyonight)](https://github.com/relaxxpls/)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=relaxxpls&layout=compact&theme=tokyonight)](https://github.com/relaxxpls/)
+<!-- [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=relaxxpls&layout=compact&theme=tokyonight)](https://github.com/relaxxpls/) -->
 
 <!-- ### Projects
 
