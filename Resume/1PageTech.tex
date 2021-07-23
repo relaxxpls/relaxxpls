@@ -1,0 +1,257 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[strict]{changepage}
+\usepackage[empty]{fullpage}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage[a4paper]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{bookmark, latexsym, titlesec, verbatim, enumitem, marvosym, fancyhdr, tabularx, fontawesome5}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+% \geometry{left=1.9cm, top=1.8cm, right=1.9cm, bottom=1.8cm, footskip=.5cm}
+\geometry{left=14.11 mm, top=18mm, right=14.11mm, bottom=7mm, footskip=.5cm}
+
+\urlstyle{same}
+
+\raggedbottom \raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
+
+% Ensure that generate PDF is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%------------------ Custom commands ------------------- 
+\def\Plus{\texttt{+}}
+\def\Minus{\texttt{-}}
+
+\newcommand{\techSkill}[2]{\item\small \textbf{#1:} #2 \vspace{-5pt}}
+\newcommand{\techSkillListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\techSkillListEnd}{\end{itemize}}
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingAlt}[5]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #5} \\
+      \textit{\small#4}
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.977\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[4]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+      \textit{\small#3} & \textit{\small #4}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeadingAlt}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=-0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\cvrank}[2]{\small{\textit{#1} \textbf{#2} $\bullet$}}
+\newcommand{\cvrankend}[2]{\small{\textit{#1} \textbf{#2} \\ }
+}
+
+
+\newcommand{\extracurr}[2]{
+    \begin{tabular*}{0.977\textwidth}{l@{\extracolsep{\fill}}r}
+        \tiny{$\bullet$}\hspace{7pt}\small{#1} & \textit{\small{#2}} \\
+    \end{tabular*}\vspace{-11pt}
+}
+
+\newcommand{\resumeItemAlt}[2]{
+    \begin{tabular*}{0.977\textwidth}{l@{\extracolsep{\fill}}r}
+        \tiny{$\bullet$}\hspace{7pt}\small{#1} & \textit{\footnotesize #2} \\
+    \end{tabular*}
+}
+\newcommand{\resumeItemAltListStart}{\begin{adjustwidth}{10.8pt}{}}
+\newcommand{\resumeItemAltListEnd}{\end{adjustwidth}}
+
+\newcommand{\resumeStatementBasic}[2]{
+    \begin{tabular*}{0.993\textwidth}{l@{\extracolsep{\fill}}r}
+      \small{#1} & \textit{\footnotesize #2} \\
+    \end{tabular*}
+}
+
+%%%%%%%%%%%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%-----------Profile-----------
+% \newcommand{\name}{Laxman Desai}
+% \newcommand{\email}{desai.laxman2001@gmail.com}
+% \newcommand{\contact}{(\Plus 91) 820-807-8914}
+% \newcommand{\GithubUsername}{relaxxpls}
+% \newcommand{\LinkedinUsername}{LaxmanDesai}
+
+% \begin{center}
+% 	\textbf{\Huge \name}\\
+% 	\vspace{10pt}
+% 	\small \faMobile* \contact \quad$|$\quad
+% 	\href{mailto:\email}{\faEnvelope\ \underline{\email}} \quad$|$\quad
+% 	\href{https://linkedin.com/in/\LinkedinUsername}{\faLinkedin\ \underline{\LinkedinUsername}} \quad$|$\quad
+% 	\href{https://github.com/\GithubUsername}{\faGithub\ \underline{\GithubUsername}}
+% \end{center}
+
+%-----------EDUCATION-----------
+% \section{Education}
+% \resumeSubHeadingListStart
+%   \resumeSubheading
+%   {Indian Institute of Technology, Bombay}{Mumbai, India}
+%   {Bachelor of Technology}{2019 -- Present}
+%   \resumeItemAltListStart
+%     \resumeItemAlt{Majoring in Chemical Engineering}{(CGPA 8.19/10)}
+%     \resumeItemAlt{Minoring in Machine Learning \& Data Science}{(CGPA 10.0/10)}
+%   \resumeItemAltListEnd
+% \resumeSubHeadingListEnd
+  
+% PT cell spacing
+  \vspace*{25mm}  %  short header
+%   \vspace*{40mm}  %  long  header
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Achievements}
+\resumeItemAltListStart
+  \resumeItemAlt
+  {Pursuing a \textbf{Minor} in \textbf{Artificial Intelligence \& Data Science} at IIT Bombay (CPI 10/10)}{(2021 - Present)}
+	\resumeItemAlt
+    {\textbf{4\hspace{1pt}$\star$} at CodeChef \href{https://www.codechef.com/users/relaxxpls}{(relaxxpls)} and \textbf{1048\textsuperscript{th}} amongst \textbf{15k\Plus} participants in Googe Kickstart Sept. `20}
+    {(2020)}
+	\resumeItemAlt
+    {Secured \textbf{AIR 1448} amongst \textbf{15lakh} other candidates in JEE Advanced}
+    {(2019)}
+	\resumeItemAlt
+    {Secured \textbf{AIR 1063} amongst \textbf{10lakh} other candidates in AIIMS Entrance Test}
+    {(2019)}
+\resumeItemAltListEnd
+
+
+%-----------Experience-----------
+\section{Experience}
+\resumeSubHeadingListStart
+  \resumeSubheading
+  {Frontend Developer Intern}{(Jul. 2021 - Present)}
+  {Board Infinity}{Mumbai, India}
+  \resumeItemListStart
+    \resumeItem{Working in an \textbf{agile} team to provide each new customer a personalized onboarding experience}
+    \resumeItem{Building a \textbf{Next.js} and \textbf{Typescript} web page that can dynamically load forms using a \textbf{JSON Schema}}
+  \resumeItemListEnd
+
+  \resumeSubheading
+  {Software Developer Intern}{(May. 2021 - Jul. 2021)}
+  {Pay1}{Mumbai, India}
+  \resumeItemListStart
+    \resumeItem{Built a Python \textbf{Flask} webserver with \textbf{Redis} cache that automated the Aadhaar eKYC process, reducing the operating costs by about \textbf{50\%} and provided a seamless onboarding experience for the new customers}
+    \resumeItem{Extracted the features using a convolution-based algorithm in NumPy and trained a CNN \textbf{PyTorch} model to make predictions, achieving an average accuracy of \textbf{92\%} on the 5 different text CAPTCHA datasets analyzed}
+  \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+  {\href{https://github.com/relaxxpls/ResoBin}{\textbf{ResoBin}} $|$ \emph{ReactJS, Redux, Python, Django Rest Framework, SQLite}}{(Mar. 2021 - Present)}
+  {Summer of Code, IIT Bombay}{}
+  \resumeItemListStart
+    \resumeItem{Developed a fully responsive website for students to share the course material, lecture notes, and quiz papers}
+    \resumeItem{Designed an intuitive and elegant frontend interface using \textbf{Figma} and built it using \textbf{React} and \textbf{Redux}}
+    \resumeItem{Created pagination alongside a debounced async search that provided a pleasant course browsing experience}
+  \resumeItemListEnd
+
+  \resumeProjectHeading
+  {\href{https://github.com/relaxxpls/StockPrediction}{\textbf{NIFTY 50 Stock Prediction}} $|$ \emph{Python, TensorFlow, statsmodels, pandas, sklearn}}{(Feb. 2021 - Apr. 2021)}
+  {Course: Machine Learning, IIT Bombay}{Prof. Biplab Banerjee, C-MInDS}
+  \resumeItemListStart
+    \resumeItem{Analysed the prediction capabilities of time series forecasting models on the daily opening price of stocks}
+    \resumeItem{Utilised a sliding window approach to predict the outcome of the $15^{th}$ day by training on the previous 14 days}
+    \resumeItem{Studied statmodels such as \textbf{ARIMA} \& \textbf{TensorFlow} \textbf{RNN} models such as stacked \& bidirectional \textbf{LSTMs}}
+  \resumeItemListEnd
+
+  \resumeProjectHeading
+  {\href{https://github.com/relaxxpls/Optimize-Heating-Indoors}{\textbf{Optimize Heating Indoors}} $|$ \emph{Python, SymPy, NumPy, Matplotlib}}{(Feb. 2021 -- Apr. 2021)}
+  {Course: Heat Transfer, IIT Bombay}{Prof. P. Sunthar, ChE}
+  \resumeItemListStart
+    \resumeItem{Studied \& analysed methods to reduce energy consumption in large buildings situated in hot \& dry places}
+    \resumeItem{Implemented a solution comprising of a thin water layer that causes evaporation resulting in a 5\% heat drop}
+    \resumeItem{Solved resulting PDEs in Python with \textbf{NumPy} \& \textbf{SymPy} and visualised the result data using \textbf{Matplotlib}}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+%-----------PoRS-----------
+\section{Position of Responsibility}
+\resumeSubHeadingListStart
+  \resumeSubheading
+  {UI Development Lead}{(Jun. 2021 -- Present)}
+  {Developers Community, IIT Bombay}{Mumbai, India}
+  \resumeItemListStart
+    \resumeItem{Mentored the junior developers in the ideation and development of various institute-wide web projects}
+    \resumeItem{Contributed to the development of Creddit, a course related opinions and Q\&As website}
+  \resumeItemListEnd
+
+  \resumeSubheading
+  {Design Secretary}{(Apr. 2020 -- Apr. 2021)}
+  {Chemical Engineering Association, IIT Bombay}{Mumbai, India}
+  \resumeItemListStart
+    \resumeItem{Crafted posters and curated content for promoting \textbf{10\Plus} departmental events, totaling a {200\Plus} attendance}
+    \resumeItem{Designed Chemical Gazette, the annual magazine alongside the Freshmen Newsletter \& the department hoodie}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\techSkillListStart
+  \techSkill{Languages}{C\Plus\Plus 17, Python, JavaScript/TypeScript, HTML, CSS/SASS, \TeX, Java, Matlab, Powershell, Bash}
+  \techSkill{Development}{ReactJS, Redux, Next.js, Django, Flask, Selenium, Redis, Git, Postman, VSCode, PostgreSQL}
+  \techSkill{Machine Learning}{Torch, OpenCV, TensorFlow, Keras, Jupyter, Pandas, NumPy, SKLearn, SciPy, Matplotlib}
+\techSkillListEnd
+
+\end{document}
