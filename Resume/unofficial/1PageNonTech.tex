@@ -1,0 +1,169 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\usepackage[a4paper]{geometry}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\geometry{left=1.9cm, top=1.8cm, right=1.9cm, bottom=1.8cm, footskip=.5cm}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%------------------ Custom commands ------------------- 
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[4]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+      \textit{\small#3} & \textit{\small #4}\\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=-0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% Extras
+\newcommand*{\cvrank}[2]{\footnotesize{\textit{#1} \textbf{#2} $\bullet$}}
+\newcommand*{\cvrankend}[2]{\footnotesize{\textit{#1} \textbf{#2} \\ }
+}
+% Extras end
+
+%%%%%%%%%%%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+  \vspace*{2.8cm}
+  %-----------Internships-----------
+  \section{Experience}
+    \resumeSubHeadingListStart
+      \resumeSubheading
+        {Tech Leaders Summer Fellow}{Jun. 2020 - Aug. 2020}
+        {Camp K12}{Mumbai, India}
+        \resumeItemListStart
+          \resumeItem{Taught coding in an intuitive manner to \textbf{100}\footnotesize{+} \small students aged 14\hspace{2pt}-\hspace{1pt}18 years using \textbf{Python} and \textbf{JavaScript}}
+          \resumeItem{Spearheaded the redesign \& diversification of the existing curriculum leading to \textbf{15\%} increase in revenue}
+          \resumeItem{Covered curriculum spanning from basics such as Iterators to complex algorithms like Divide \& Conquer}
+          \resumeItem{Utilized AI Playground, Repl.it, Hatch XR, and MIT App Inventor}
+        \resumeItemListEnd
+      
+      \resumeSubheading
+        {Design Secretary}{(Apr. 2020 - Ongoing)}
+        {Chemical Engineering Association (ChEA), IIT Bombay}{Mumbai, India}
+        \resumeItemListStart
+          \resumeItem{Part of a \textbf{9} member team, selected out of \textbf{50+} students on the basis of manifesto, assignment \& interview}
+          \resumeItem{Co-organised and coordinated \textbf{20+} departmental events, managing \textbf{1000+} unique students in total}
+          \resumeItem{Crafted posters, curated content,  designed new and innovative department hoodies leading to higher sales}
+          \resumeItem{Utilised \textbf{CorelDraw} \& \textbf{Adobe Creative Cloud} (Illustrator, Photoshop, Premiere Pro \& After Effects)}
+      \resumeItemListEnd
+  %---------
+      \resumeSubheading
+        {Institute Cultural Mentor}{(Jun. 2020 - Ongoing)}
+        {StyleUp - The Fashion Club, Culturals, IIT Bombay}{Mumbai, India}
+        \resumeItemListStart
+          \resumeItem{Nominated (\textbf{4} out of \textbf{100}+) by Institute Fashion Nominee to promote fashion \& other cultural activities}
+          \resumeItem{Conceptualized and spearheaded Style Saturday, a monthly blog aimed at promoting style, grooming and personal well being amidst the COVID lock down resulting in \textbf{2$\times$} monthly engagement}
+          \resumeItem{Led the ideation \& execution of various genre related events, targeting \textbf{300\%} \textbf{increase} in participation by introducing mixed themes, using innovative publicity, and introducing large scale never before seen online events such as Glamour Grande, an online fashion show}
+        \resumeItemListEnd
+      
+    \resumeSubHeadingListEnd    
+
+  %-----------PROJECTS-----------
+  \section{Projects}
+      \resumeSubHeadingListStart
+        \resumeProjectHeading
+            {\textbf{Smart Suitcase} $|$ \emph{Python, OpenCV, ROS, Gazebo, RViz, RQT}}{(Mar. 2020 - Jul. 2020)}{Institute Technical Summer Project, IIT Bombay}{Guide: Vishwajeet Bhagyawant}
+            \resumeItemListStart
+              \resumeItem{Designed a suitcase that follows its owner there by eliminating the trouble of carrying it around} 
+              \resumeItem{Tested its functioning through virtual simulation by deploying it on a user controlled test target}
+              \resumeItem{Implemented image processing through \textbf{Python} \& \textbf{OpenCV} to scan the surroundings and lock down on the target through the \textbf{HSV} color range and used centroid tracking for mimicking the targets motion}
+              \resumeItem{Accurately \& efficiently simulated the bot and the control target using \textbf{Gazebo}, while using \textbf{ROS} to facilitate low-level device control and communication between various sub-processes}
+            \resumeItemListEnd
+    
+    %---------    
+        \resumeProjectHeading
+            {\textbf{Wireless Remote Controlled Car} $|$ \emph{IoT}}{(Aug. 2019 - Sep. 2019)} {Electronics \& Robotics Club, IIT Bombay}{}
+            \resumeItemListStart
+              \resumeItem{Built a bot which decodes Bluetooth signals using an \textbf{ATtiny} IC to overcome an obstacle-filled course} 
+              \resumeItem{Installed \textbf{HC05} Bluetooth module to operate the bot remotely using an Android app}
+              \resumeItem{Implemented differential steering mechanism via \textbf{L293D} motor driver for reducing the turning radius}
+            \resumeItemListEnd
+
+      \resumeSubHeadingListEnd
+
+  %-----------PROGRAMMING SKILLS-----------
+  \section{Achievements}
+   \begin{itemize}[leftmargin=0.15in, label={}]
+      \item{ \small{
+        \textbf{Competitive Coding :}
+        \cvrank{4\hspace{1pt}$\star$}{CodeChef (relaxxpls)}
+        \cvrankend{1048\textsuperscript{th}}{Googe Kickstart (relaxxpls)}
+      }} \vspace{-.5mm}
+      \item{ \small{
+        \textbf{Engineering Entrances :}
+        \cvrank{AIR 1448}{JEE Advanced}
+        \cvrank{99.6\hspace{1pt}\%\hspace{1pt}ile}{JEE Mains}
+        \cvrankend{2\hspace{1pt}nd Rank, Phy Topper}{GCET}
+      }} \vspace{-.5mm}
+      \item{ \small{
+        \textbf{Medical Entrances :}
+        \cvrank{AIR 1064}{AIIMS}
+        \cvrankend{98.7\hspace{1pt}\%\hspace{1pt}ile\hspace{2pt}(3rd highest in Goa)}{NEET}
+      }} \vspace{-0mm}
+   \end{itemize}
+
+  %-----------PROGRAMMING SKILLS-----------
+  \section{Technical Skills}
+   \begin{itemize}[leftmargin=0.15in, label={}]
+      \small{\item{
+       \textbf{Languages}{: C/C++, Python, Java, JavaScript, HTML/CSS, Bash, Matlab, R} \\
+       \textbf{Tools}{: Git, PowerShell, Sublime Text, \LaTeX, AutoCAD, SolidWorks, ROS, CMake, Adobe CC} \\
+       \textbf{Libraries}{: STL, NumPy, OpenCV, TKinter} 
+      }}
+   \end{itemize}
+
+\end{document}
