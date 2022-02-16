@@ -4,6 +4,7 @@ I'm a Junior Undergraduate at IIT Bombay. I love to explore different domains of
 
 [![LinkedIn: laxmandesai](https://img.shields.io/badge/-laxmandesai-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/laxmandesai/)](https://www.linkedin.com/in/laxmandesai/)
 [![GitHub relaxxpls](https://img.shields.io/github/followers/relaxxpls?label=follow&style=social)](https://github.com/relaxxpls)
+![](https://hit.yhype.me/github/profile?user_id=63250453)
 
 - 🌱 I’m currently self-learning Full Stack Web Development, Deep Learning and Computer Vision.
 - 💬 Ask me about anything, I am happy to help.
