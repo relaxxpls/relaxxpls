@@ -9,7 +9,6 @@ I'm a Senior Undergraduate at IIT Bombay. I love to explore different domains of
 - 💬 Ask me about anything, I am happy to help.
 - 📫 How to reach me: [desai.laxman2001@gmail.com](mailto:desai.laxman2001@gmail.com)
 - ❤️ Solving Problems & Open Source!
-- 😄 Pronouns: *kill / me*
 - ⚡ Fun fact: I learned to code at the start of the pandemic!
 
 ## Languages and Tools
